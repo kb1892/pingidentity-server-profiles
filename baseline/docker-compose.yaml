@@ -5,7 +5,7 @@ services:
     image: pingidentity/pingaccess:${PING_IDENTITY_DEVOPS_TAG}
     command: wait-for pingfederate:9031 -t 420 -- entrypoint.sh start-server
     environment: 
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_URL=https://github.com/kb1892/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=baseline/pingaccess
     env_file:
       # Configuration file created when setup.sh (Getting-started project root directory) is first run to source
@@ -28,7 +28,7 @@ services:
     image: pingidentity/pingfederate:${PING_IDENTITY_DEVOPS_TAG}
     # command: wait-for pingdirectory:1389 -t 300 -- entrypoint.sh start-server
     environment:
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_URL=https://github.com/kb1892/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=baseline/pingfederate
       - KURT_TEST_ENVAR=hifromkurt
     env_file:
@@ -46,7 +46,7 @@ services:
   pingdirectory:
     image: pingidentity/pingdirectory:${PING_IDENTITY_DEVOPS_TAG}
     environment:
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_URL=https://github.com/kb1892/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=baseline/pingdirectory
     env_file:
       - ~/.pingidentity/config
