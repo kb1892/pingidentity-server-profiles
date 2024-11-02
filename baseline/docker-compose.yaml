@@ -30,6 +30,7 @@ services:
     environment:
       - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=baseline/pingfederate
+      - KURT_TEST_ENVAR=hifromkurt
     env_file:
       - ~/.pingidentity/config
     #volumes:
