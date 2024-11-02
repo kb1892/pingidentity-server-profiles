@@ -52,7 +52,7 @@ services:
       - ~/.pingidentity/config
     #volumes:
     #  - ${HOME}/projects/devops/volumes/full-stack.pingdirectory:/opt/out
-    #  - ${HOME}/projects/devops/pingidentity-server-profiles/baseline/pingdirectory:/opt/in
+       - ${HOME}/projects/devops/pingidentity-server-profiles/baseline/pingdirectory:/opt/in
     ports:
       - 1636-1646:1636
       - 1443-1453:1443
