@@ -27,5 +27,7 @@ echo_bar
 
 export_container_env PF_ENGINE_BASE_URL PD_DELEGATOR_URL PF_ADMIN_PUBLIC_BASEURL
 
+apply_local_server_profile
+
 touch /opt/server/test.txt
 echo "hi 123">/opt/server/test.txt
