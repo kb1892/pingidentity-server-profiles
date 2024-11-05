@@ -1,0 +1,41 @@
+dsconfig set-connection-handler-prop \
+    --handler-name 'HTTPS Connection Handler'  \
+    --reset web-application-extension 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'Available File Descriptors'  \
+    --set enabled:false 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'CPU Usage (Percent)'  \
+    --set enabled:false 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'License Expiration (Days)'  \
+    --set enabled:false  \
+    --set warning-value:10.0 
+
+dsconfig set-log-publisher-prop \
+    --publisher-name 'Data Recovery Log'  \
+    --set enabled:false 
+
+dsconfig set-log-publisher-prop \
+    --publisher-name 'File-Based Audit Logger'  \
+    --set enabled:true 
+
+dsconfig set-monitor-provider-prop \
+    --provider-name 'Host System'  \
+    --reset enabled 
+
+dsconfig create-password-policy \
+    --policy-name 'Testing Password Policy'  \
+    --set state-update-failure-policy:ignore  \
+    --set password-attribute:userpassword  \
+    --set default-password-storage-scheme:PBKDF2  \
+    --set 'password-validator:Commonly-Used Passwords'  \
+    --set password-validator:Dictionary  \
+    --set 'password-validator:Minimum Password Length of 12 Characters'  \
+    --set lockout-failure-count:5  \
+    --set 'failure-lockout-action:Delay Bind Response'  \
+    --set password-change-requires-current-password:true 
+
