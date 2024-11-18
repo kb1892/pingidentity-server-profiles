@@ -1,5 +1,5 @@
 This profile was created with the manage-profile generate-profile subcommand.
-It was generated at 05/Nov/2024:17:45:51.909 +0000 by user ping, from the
+It was generated at 17/Nov/2024:10:52:05.465 +0000 by user ping, from the
 server in /opt/out/instance.
 
 Certain steps will always need to be taken to use this generated profile with
@@ -24,18 +24,3 @@ for documentation and organization.
 
 For more information on the server profile, see the example profile template
 and README in the resource/ directory in the server root.
-
-The following files and directories in the server root were excluded from the
-generated profile, and can be manually added if necessary. These files can also
-be included by generate-profile with the --includePath argument:
-config/encryption-settings/encryption-settings-db
-config/tools.properties
-config/encryption-settings/encryption-settings-db.old
-config/keystore
-config/keystore.pin
-config/truststore
-config/ads-truststore
-config/ads-truststore.pin
-config/encryption-settings.pin
-config/tools.properties.orig
-config/truststore.pin
