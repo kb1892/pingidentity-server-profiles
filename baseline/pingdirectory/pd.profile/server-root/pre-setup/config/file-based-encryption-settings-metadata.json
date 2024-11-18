@@ -3,10 +3,10 @@
 # not be altered.  Changing anything in this file will prevent the server from
 # being able to access the content of the encryption settings database
 { "keyFactoryAlgorithm":"PBKDF2WithHmacSHA256",
-  "keyFactorySaltBase64":"hRQeSxtiTlnAbaRwxeuxWg==",
+  "keyFactorySaltBase64":"ahgmYiplBoqw5KaajZcehw==",
   "keyFactoryIterationCount":600000,
   "derivedKeyLengthBits":256,
   "cipherAlgorithm":"AES",
   "cipherTransformation":"AES/GCM/PKCS5Padding",
-  "initializationVectorBase64":"GOoPAdGkd9Yl9po+pb7RMw==",
+  "initializationVectorBase64":"b67oXNmp0DP7i4/eO3bmiw==",
   "gcmTagLengthBits":128 }
